@@ -6,7 +6,7 @@ a:visited {
   color: inherit;
 }
 
-a:hover, button:hover {
+a:hover {
   color: darkred;
 }
 
@@ -14,6 +14,18 @@ a:hover, button:hover {
   color: #212529;
 }
 
+.bi-moon-stars-fill:hover {
+  color: darkred;
+}
+
 .bi-sun-fill {
   color: yellow;
+}
+
+.bi-sun-fill:hover {
+  color: darkred;
+}
+
+.btn-m {
+  margin: calc(-.5* var(--bs-offcanvas-padding-y)) calc(-.5* var(--bs-offcanvas-padding-x)) calc(-.5* var(--bs-offcanvas-padding-y)) auto;
 }

@@ -9,31 +9,69 @@ $dark-theme-text: #fff;
 body {
   font-family: "Poppins", serif;
   font-display: swap;
-  background-color: $dark-theme-backgroud !important;
-  color: $dark-theme-text !important;
+  background-color: $light-theme-backgroud !important;
+  color: $light-theme-text !important;
 }
 
 .dark-theme {
-  background-color: $light-theme-backgroud !important;
-  color: $light-theme-text !important;
+  background-color: $dark-theme-backgroud !important;
+  color: $dark-theme-text !important;
 
   .offcanvas {
-    background-color: $light-theme-backgroud !important;
-    color: $light-theme-text !important;
+    background-color: rgb(36, 36, 36) !important;
+    color: $dark-theme-text !important;
   }
 
   .b-botton {
-    border-bottom: 2px dashed rgb(36, 36, 36) !important;
+    border-bottom: 2px dashed $dark-theme-text !important;
+  }
+
+  .carousel-indicators>button {
+    background-color: $dark-theme-text !important;
+  }
+
+  .bi-chevron-left,
+  .bi-chevron-right {
+    color: $dark-theme-text !important;
+  }
+
+  .btn-m {
+    fill: $dark-theme-text;
+  }
+
+  .bi-list {
+    color: $dark-theme-text;
+  }
+
+  .navbar-toggler {
+    border: var(--bs-border-width) solid rgba(255, 255, 255, 0.15);
   }
 }
 
-.offcanvas {
-  background-color: rgb(36, 36, 36);
-  color: $dark-theme-text;
+.carousel-indicators>button {
+  background-color: $light-theme-text !important;
 }
 
-a, span, .nav-link, .navbar-brand {
-  color: inherit ;
+.bi-chevron-left,
+.bi-chevron-right {
+  color: $light-theme-text !important;
+}
+
+.offcanvas {
+  background-color: $light-theme-backgroud !important;
+  color: $light-theme-text !important;
+}
+
+.b-botton {
+  border-bottom: 2px dashed rgb(36, 36, 36) !important;
+}
+
+a,
+span,
+.nav-link,
+.navbar-brand,
+.carousel-caption {
+  color: inherit;
 }
 
 .bi-k {
@@ -43,8 +81,4 @@ a, span, .nav-link, .navbar-brand {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-}
-
-.b-botton {
-  border-bottom: 2px dashed white;
 }
