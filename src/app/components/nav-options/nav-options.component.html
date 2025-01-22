@@ -1,0 +1,6 @@
+<ul class="navbar-nav">
+  <li [class.selected]="selectedOption === 'home'"><a routerLink="/" (click)="selectOption('home')" class="nav-link px-2" data-bs-dismiss="offcanvas">Home</a></li>
+  <li [class.selected]="selectedOption === 'hobbie'"><a routerLink="/hobbie" (click)="selectOption('hobbie')" class="nav-link px-2" data-bs-dismiss="offcanvas">Hobbies</a></li>
+  <li [class.selected]="selectedOption === 'about'"><a routerLink="/about" (click)="selectOption('about')" class="nav-link px-2" data-bs-dismiss="offcanvas">About Me</a></li>
+  <li [class.selected]="selectedOption === 'contact'"><a routerLink="/contact" (click)="selectOption('contact')" class="nav-link px-2" data-bs-dismiss="offcanvas">Contact</a></li>
+</ul>

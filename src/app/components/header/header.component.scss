@@ -1,0 +1,25 @@
+@import '../../../styles.scss';
+
+.oculto {
+  display: none;
+}
+
+a, h5, button {
+  //color: $color-texto-navbar;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover, button:hover {
+  color: darkred;
+}
+
+.bi-moon-stars-fill {
+  color: #212529;
+}
+
+.bi-sun-fill {
+  color: yellow;
+}

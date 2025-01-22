@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$color-texto-principal: white;
+$color-texto-navbar: white;
+$color-texto-footer: white;
+
+
+$color-fondo-claro: #fff;
+$color-texto-claro: #000;
+$color-fondo-oscuro: #000;
+$color-texto-oscuro: #fff;
+
+body {
+  font-family: "Poppins", serif;
+  //background: linear-gradient(0deg, darkred, white);
+  background-color: $color-fondo-oscuro !important;
+  color: $color-texto-oscuro !important;
+}
+
+.container {
+  //background: black;
+}
+
+.tema-oscuro {
+  background-color: $color-fondo-claro !important;
+  color: $color-texto-claro !important;
+
+  .offcanvas {
+    background-color: $color-fondo-claro !important;
+    color: $color-texto-claro !important;
+  }
+
+  .b-botton {
+    border-bottom: 2px dashed rgb(36, 36, 36) !important;
+  }
+}
+
+.offcanvas {
+  background-color: rgb(36, 36, 36);
+  color: $color-texto-oscuro;
+}
+
+a,
+span {
+  color: inherit;
+}
+
+.bi-k {
+  border: 2px solid;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.b-botton {
+  border-bottom: 2px dashed white;
+}

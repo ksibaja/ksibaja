@@ -1,0 +1,16 @@
+@import '../../../styles.scss';
+
+a {
+  font-size: 20px;
+  //color: $color-texto-navbar;
+}
+
+a:hover {
+  color: darkred;
+}
+
+.selected {
+  a {
+    color: darkred;
+  }
+}
