@@ -8,17 +8,17 @@ import { NavOptionsComponent } from "../nav-options/nav-options.component";
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  temaActual: string | null = 'dark';
+  currentTheme: string | null = 'dark';
 
   ngOnInit(): void {
     let theme = localStorage.getItem('currentTheme');
-    this.temaActual = theme || 'dark';
+    this.currentTheme = theme || 'dark';
   }
 
-  cambiarTema(tema: string) {
-    this.temaActual = tema || 'dark';
-    localStorage.setItem('currentTheme', this.temaActual);
-    document.body.classList.toggle('tema-oscuro', tema === 'light');
+  switchTheme(theme: string) {
+    this.currentTheme = theme || 'dark';
+    localStorage.setItem('currentTheme', this.currentTheme);
+    document.body.classList.toggle('dark-theme', theme === 'light');
   }
 
   selectOption(option: string) {

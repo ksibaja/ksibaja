@@ -13,7 +13,6 @@ export class AppComponent {
 
   ngOnInit(): void {
     let theme = localStorage.getItem('currentTheme');
-    console.log(theme);
-    document.body.classList.toggle('tema-oscuro', theme === 'light');
+    document.body.classList.toggle('dark-theme', theme === 'light');
   }
 }
