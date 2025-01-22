@@ -13,13 +13,8 @@ $color-texto-oscuro: #fff;
 
 body {
   font-family: "Poppins", serif;
-  //background: linear-gradient(0deg, darkred, white);
   background-color: $color-fondo-oscuro !important;
   color: $color-texto-oscuro !important;
-}
-
-.container {
-  //background: black;
 }
 
 .tema-oscuro {
@@ -41,9 +36,8 @@ body {
   color: $color-texto-oscuro;
 }
 
-a,
-span {
-  color: inherit;
+a, span, .nav-link {
+  color: inherit ;
 }
 
 .bi-k {

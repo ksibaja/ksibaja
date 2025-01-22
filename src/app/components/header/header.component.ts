@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { NavOptionsComponent } from "../nav-options/nav-options.component";
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, NavOptionsComponent],
+  imports: [NavOptionsComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
