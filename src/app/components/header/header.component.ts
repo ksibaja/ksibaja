@@ -12,11 +12,11 @@ export class HeaderComponent {
 
   ngOnInit(): void {
     let theme = localStorage.getItem('currentTheme');
-    this.temaActual = theme;
+    this.temaActual = theme || 'dark';
   }
 
   cambiarTema(tema: string) {
-    this.temaActual = tema;
+    this.temaActual = tema || 'dark';
     localStorage.setItem('currentTheme', this.temaActual);
     document.body.classList.toggle('tema-oscuro', tema === 'light');
   }
