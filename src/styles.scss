@@ -13,6 +13,7 @@ $color-texto-oscuro: #fff;
 
 body {
   font-family: "Poppins", serif;
+  font-display: swap;
   background-color: $color-fondo-oscuro !important;
   color: $color-texto-oscuro !important;
 }
