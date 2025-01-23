@@ -51,10 +51,39 @@ body {
     background-color: rgb(24, 24, 24) !important;
   }
 
-  .form-control, .input-group-text {
+  .form-control,
+  .input-group-text {
     background-color: rgb(24, 24, 24);
     color: $dark-theme-text;
   }
+
+  .spinner::before {
+    border-right-color: $dark-theme-text !important;
+  }
+
+  .spinner::after {
+    border-left-color: $dark-theme-text !important;
+  }
+
+  .spinner {
+    animation: text-color 1.5s ease-in-out infinite alternate !important;
+    -webkit-animation: text-color 1.5s ease-in-out infinite alternate !important;
+}
+
+  @keyframes text-color {
+    0% {
+      color: darkred;
+    }
+
+    50% {
+      color: $dark-theme-text;
+    }
+
+    100% {
+      color: darkred;
+    }
+  }
+
 
   /*.navbar-nav [data-animation="to-top"] .text-fill::before {
     color: $dark-theme-text !important;
