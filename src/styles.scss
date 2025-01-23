@@ -47,9 +47,13 @@ body {
     border: var(--bs-border-width) solid rgba(255, 255, 255, 0.15);
   }
 
-  .navbar-nav [data-animation="to-top"] .text-fill::before {
-    color: $dark-theme-text !important;
+  .bg-white {
+    background-color: rgb(24, 24, 24) !important;
   }
+
+  /*.navbar-nav [data-animation="to-top"] .text-fill::before {
+    color: $dark-theme-text !important;
+  }*/
 }
 
 .carousel-indicators>button {
@@ -89,6 +93,7 @@ span,
 
 
 // Navbar text
+/*
 .text-fill {
   position: relative;
   display: inline-block;
@@ -129,3 +134,4 @@ span,
 .navbar-nav [data-animation="to-top"] .text-fill:hover::before {
   height: 0;
 }
+*/
