@@ -51,6 +51,11 @@ body {
     background-color: rgb(24, 24, 24) !important;
   }
 
+  .form-control, .input-group-text {
+    background-color: rgb(24, 24, 24);
+    color: $dark-theme-text;
+  }
+
   /*.navbar-nav [data-animation="to-top"] .text-fill::before {
     color: $dark-theme-text !important;
   }*/
