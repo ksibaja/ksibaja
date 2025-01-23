@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-$light-theme-backgroud: #fff;
+$light-theme-backgroud: #dddddd;
 $light-theme-text: #000;
 $dark-theme-backgroud: #000;
-$dark-theme-text: #fff;
+$dark-theme-text: #dddddd;
 
 body {
   font-family: "Poppins", serif;
@@ -18,7 +18,7 @@ body {
   color: $dark-theme-text !important;
 
   .offcanvas {
-    background-color: rgb(36, 36, 36) !important;
+    background-color: rgb(24, 24, 24) !important;
     color: $dark-theme-text !important;
   }
 
@@ -45,6 +45,10 @@ body {
 
   .navbar-toggler {
     border: var(--bs-border-width) solid rgba(255, 255, 255, 0.15);
+  }
+
+  .navbar-nav [data-animation="to-top"] .text-fill::before {
+    color: $dark-theme-text !important;
   }
 }
 
@@ -81,4 +85,47 @@ span,
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+
+// Navbar text
+.text-fill {
+  position: relative;
+  display: inline-block;
+}
+
+.text-fill::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.29, 0.73, 0.74, 1.02);
+  -webkit-transition: all 0.25s cubic-bezier(0.29, 0.73, 0.74, 1.02);
+  -moz-transition: all 0.25s cubic-bezier(0.29, 0.73, 0.74, 1.02);
+  -ms-transition: all 0.25s cubic-bezier(0.29, 0.73, 0.74, 1.02);
+  -o-transition: all 0.25s cubic-bezier(0.29, 0.73, 0.74, 1.02);
+}
+
+.navbar-nav [data-animation] .text-fill::before,
+.text-fill:hover::before {
+  width: 100%;
+}
+
+// Animations nabvar text
+.navbar-nav [data-animation="to-top"] .text-fill {
+  color: darkred !important;
+}
+
+.navbar-nav [data-animation="to-top"] .text-fill::before {
+  color: $light-theme-text !important;
+}
+
+.navbar-nav [data-animation="to-top"] .text-fill::before {
+  height: 100%;
+}
+
+.navbar-nav [data-animation="to-top"] .text-fill:hover::before {
+  height: 0;
 }
