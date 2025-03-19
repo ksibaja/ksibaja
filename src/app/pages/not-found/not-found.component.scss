@@ -1,3 +1,13 @@
-.container {
-  height: 100dvh;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  padding: inherit !important;
+}
+
+a:hover {
+  color: darkred;
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -11,6 +11,11 @@ export class NavOptionsComponent {
   selectedOption: string = 'home'; // Selected option by default
 
   ngOnInit(): void {
+    this.selectedOption = localStorage.getItem('selectedOption') || 'home';
+  }
+
+  @HostListener('window:resize', [])
+  onResize(): void {
     this.selectedOption = localStorage.getItem('selectedOption') || 'home';
   }
 
